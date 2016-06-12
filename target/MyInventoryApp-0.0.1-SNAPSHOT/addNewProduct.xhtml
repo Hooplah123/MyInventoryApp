@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Add a new product to inventory</title>
+</head>
+<body>
+	<h3>Add a new Product to Inventory Database</h3>
+	<h:form>
+	Please enter new Product_ID:
+	<h:inputText value="#{product.product_ID}" />
+		<br />
+	Please enter new Product_Name:
+	<h:inputText value="#{product.product_Name}" />
+		<br />
+	Please enter the quantity:
+	<h:inputText value="#{product.quantity}" />
+		<br />
+	Please enter the units of quantity:
+	<h:inputText value="#{product.units}" />
+		<br />
+	Please enter the status of the product:
+	<h:inputText value="#{product.product_Status}" />
+		<br />
+		<h:commandButton value="Add Product to Inventory"
+			action="#{addNewProduct.execute}" />
+	</h:form>
+
+</body>
+</html>

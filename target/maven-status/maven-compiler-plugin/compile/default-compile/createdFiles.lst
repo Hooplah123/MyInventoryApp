@@ -1,0 +1,17 @@
+com\MyInventoryApp\DTO\User.class
+com\MyInventoryApp\DAO\IUserDAO.class
+com\MyInventoryApp\Service\IUserService.class
+com\MyInventoryApp\DTO\Product.class
+com\MyInventoryApp\UI\GetInventory.class
+com\MyInventoryApp\DAO\HibernateUtil.class
+com\MyInventoryApp\DAO\IProductDAO.class
+com\MyInventoryApp\Service\IProductService.class
+com\MyInventoryApp\UI\AddNewProduct.class
+com\MyInventoryApp\UI\UpdateProduct.class
+com\MyInventoryApp\Service\ProductService.class
+com\MyInventoryApp\DAO\UserHbmDAO.class
+com\MyInventoryApp\DAO\ProductHbmDAO.class
+com\MyInventoryApp\UI\CreateNewUser.class
+com\MyInventoryApp\Service\UserService.class
+com\MyInventoryApp\UI\ApplicationInfo.class
+com\MyInventoryApp\UI\DeleteProduct.class

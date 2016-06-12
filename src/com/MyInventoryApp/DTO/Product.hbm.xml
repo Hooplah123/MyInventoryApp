@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.MyInventoryApp.DTO.Product" table="Inventory" catalog="myinventoryapp">
+<!--  		<id name="SQL_ID" type="java.lang.Integer">
+			<column name="SQL_ID" />
+			<generator class="identity" />
+		</id> 
+		<property name="Product_ID" type="java.lang.Integer">
+			<column name="PRODUCT_ID" length="11" not-null="true" unique="true" />
+		</property> -->
+		<id name="Product_ID" type="java.lang.Integer">
+			<column name="PRODUCT_ID"  length="11" not-null="true" unique="true"/>
+			<!--generator class="identity" /-->
+		</id>
+		<property name="Product_Name" type="string">
+			<column name="PRODUCT_NAME" length="255" not-null="true" unique="true" />
+		</property>
+		<property name="Quantity" type="java.lang.Integer">
+			<column name="QUANTITY" length="11" not-null="false" unique="false" />
+		</property>
+		<property name="Units" type="string">
+			<column name="UNITS" length="255" not-null="false" unique="false" />
+		</property>
+		<property name="Product_Status" type="string">
+			<column name="PRODUCT_STATUS" length="255" not-null="false" unique="false" />
+		</property>
+	</class>
+</hibernate-mapping>

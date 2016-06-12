@@ -1,0 +1,17 @@
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\UI\CreateNewUser.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\DAO\IUserDAO.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\UI\GetInventory.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\Service\ProductService.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\DAO\ProductHbmDAO.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\DTO\User.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\UI\AddNewProduct.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\DTO\Product.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\DAO\IProductDAO.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\Service\UserService.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\Service\IUserService.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\DAO\UserHbmDAO.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\Service\IProductService.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\DAO\HibernateUtil.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\UI\ApplicationInfo.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\UI\DeleteProduct.java
+C:\Users\Andy F\workspace\MyInventoryApp\src\com\MyInventoryApp\UI\UpdateProduct.java

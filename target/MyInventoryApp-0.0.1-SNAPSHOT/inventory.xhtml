@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Inventory</title>
+</head>
+<body>
+
+	<h1>INVENTORY</h1>
+	<p:dataTable var="productResults" value="#{getInventory.products}">
+		<p:column headerText="Product Name">
+			<p:outputLabel value="#{productResults.getProduct_Name()}" />
+		</p:column>
+		<p:column headerText="Product Code">
+			<p:outputLabel value="#{productResults.getProduct_ID()}" />
+		</p:column>
+		<p:column headerText="Quantity">
+			<p:outputLabel value="#{productResults.getQuantity()}" />
+		</p:column>
+		<p:column headerText="Units">
+			<p:outputLabel value="#{productResults.getUnits()}" />
+		</p:column>
+		<p:column headerText="Status">
+			<p:outputLabel value="#{productResults.getProduct_Status()}" />
+		</p:column>
+	</p:dataTable>
+	<br/>
+	<h:form>
+		Update an item- Product Name:
+		<h:inputText value="#{product.product_Name}" />
+		<br/>
+		Product ID:
+		<h:inputText value="#{product.product_ID}" />
+		<br/>
+		Quantity:
+		<h:inputText value="#{product.quantity}" />
+		<br/>
+		Units:
+		<h:inputText value="#{product.units}" />
+		<br/>
+		Product Status:
+		<h:inputText value="#{product.product_Status}" />
+		<br/>
+		<h:commandButton value="Update Inventory" action="#{updateProduct.execute}" />
+	</h:form>
+</body>
+</html>

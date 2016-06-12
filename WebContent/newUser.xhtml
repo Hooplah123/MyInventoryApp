@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Create a New User</title>
+</h:head>
+<h:body>
+	<h1>Create a New User</h1>
+	
+	<p></p>
+
+	<h:form>
+		<h:outputLabel value="#{applicationInfo.getNewNamePrompt()}" />
+		<h:inputText value="#{user.name}"/><br />
+		<h:outputLabel value="#{applicationInfo.getNewUsernamePrompt()}" />
+		<h:inputText value="#{user.username}"/><br />
+		<h:outputLabel value="#{applicationInfo.getNewPasswordPrompt()}" />
+		<h:inputText value="#{user.password}"/>
+	
+		<h:commandButton value="Submit" action="#{createNewUser.execute}"/>
+	</h:form>
+
+</h:body>
+</html>
