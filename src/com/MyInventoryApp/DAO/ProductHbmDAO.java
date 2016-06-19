@@ -51,9 +51,12 @@ public class ProductHbmDAO implements IProductDAO {
 	@Override
 	public void delete(Product product) throws Exception {
 		Session session = HibernateUtil.getSessionFactory().openSession();
-		Query query = session.createQuery("delete Product where product_ID = :ID");
-		query.setParameter("ID", product.getProduct_ID());
-		query.executeUpdate();
+		session.beginTransaction();
+		Object persistantInstance = session.load(Product.class, product.getProduct_ID());
+		if (persistantInstance != null) {
+			session.delete(persistantInstance);
+		}
+		session.getTransaction().commit();
 		return;
 	}
 
