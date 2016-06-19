@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.inject.Named;
 
+import org.hibernate.Hibernate;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -32,15 +33,13 @@ public class ProductHbmDAO implements IProductDAO {
 		try {
 			//Gather a product from the database that matches the Product_ID
 			//supplied by the user, and assign it to p1.
+			Transaction tx = session.beginTransaction();
 			Product p1 = (Product) session.load(Product.class, product.getProduct_ID());
-			//Change all of p1's attributes to match the input from the user.
 			p1.setProduct_Name(product.getProduct_Name());
 			p1.setQuantity(product.getQuantity());
 			p1.setUnits(product.getUnits());
 			p1.setProduct_Status(product.getProduct_Status());
-			//Flush the session, changing the product's attributes in the database.
-			session.flush();
-			
+			tx.commit();
 		} catch(Exception e) {
 			throw e;
 		}
