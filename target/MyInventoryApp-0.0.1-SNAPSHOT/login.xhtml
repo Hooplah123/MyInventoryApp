@@ -9,15 +9,14 @@
 <h:body>
 	<h1>Login</h1>
 	
-	<h:outputLabel value="#{applicationInfo.getExistingUsernamePrompt()}" />
-	<h:form>
-		<h:inputText></h:inputText>
-	</h:form>
-	<p></p>
-	<h:outputLabel value="#{applicationInfo.getExistingPasswordPrompt()}" />
-	<h:form>
-		<h:inputText></h:inputText>
-	</h:form>
+	<form action="/spring-mvc/login" method="POST">
+		<h:outputLabel value="#{applicationInfo.getExistingUsernamePrompt()}" />
+		<input name="name" type="text" />
+		<p></p>
+		<h:outputLabel value="#{applicationInfo.getExistingPasswordPrompt()}" />
+		<input password="password" type="text" />
+		<input type="submit" />
+	</form>
 	
 </h:body>
 </html>

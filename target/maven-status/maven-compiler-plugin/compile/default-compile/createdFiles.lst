@@ -1,3 +1,4 @@
+com\MyInventoryApp\Controllers\LoginController.class
 com\MyInventoryApp\DTO\User.class
 com\MyInventoryApp\DAO\IUserDAO.class
 com\MyInventoryApp\Service\IUserService.class

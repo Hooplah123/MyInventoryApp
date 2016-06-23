@@ -8,5 +8,14 @@
 	
 	<context:component-scan base-package="com.MyInventoryApp" />
 	
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/</value>
+		</property>
+		<property name="suffix">
+			<value>.xhtml</value>
+		</property>	
+	</bean>
 
 </beans>

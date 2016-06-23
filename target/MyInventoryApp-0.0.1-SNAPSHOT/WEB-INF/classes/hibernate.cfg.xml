@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+		
+		<!-- Change this based on the specific database you are using. -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		
+		<!-- property name="hibernate.connection.password">INSERT PASSWORD HERE</property -->
+		
+		<!-- This tells java the address of the database we are using.  This is fairly
+		common syntax; jdbc:databaseName:ipAdress:port/schemaName -->
+		<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/MyInventoryApp</property>
+		
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">true</property>
+		<mapping resource="com/MyInventoryApp/DTO/User.hbm.xml"></mapping>
+		<mapping resource="com/MyInventoryApp/DTO/Product.hbm.xml"></mapping>
+	</session-factory>
+</hibernate-configuration>
