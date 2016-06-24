@@ -3,18 +3,14 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 	<class name="com.MyInventoryApp.DTO.User" table="users" catalog="MyInventoryApp">
-		<id name="guid" type="java.lang.Integer">
-			<column name="GUID" />
-			<generator class="identity" />
+		<id name="username" type="string">
+			<column name="USERNAME" length="255"/>
 		</id>
 		<property name="name" type="string">
-			<column name="Name" length="255" not-null="true" unique="true" />
-		</property>
-		<property name="username" type="string">
-			<column name="Username" length="255" not-null="true" unique="true" />
+			<column name="NAME" length="255" not-null="true" unique="true" />
 		</property>
 		<property name="password" type="string">
-			<column name="Password" length="255" not-null="true" unique="true" />
+			<column name="PASSWORD" length="255" not-null="true" unique="true" />
 		</property>
 	</class>
 </hibernate-mapping>

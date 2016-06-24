@@ -25,5 +25,13 @@ public interface IUserService {
 	 * @throws Exception if unable to save
 	 */
 	void save(User user) throws Exception;
-	
+
+	/**
+	 * Take field input for username and password, and see if a user
+	 * exists in the database
+	 * @param user - a user whose username and password we are searching for
+	 * @return true if username and password are correct, false otherwise
+	 */
+	public boolean validateUser(User user);
+
 }

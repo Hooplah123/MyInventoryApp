@@ -33,7 +33,22 @@ public class UserService implements IUserService {
 		}
 		
 		userDAO.insertUser(user);
-	
 	}
+
+	@Override
+	public boolean validateUser(User user) {
+		try {
+			User u1 = userDAO.fetchUser(user);
+			if (u1.getUsername().equals(user.getUsername()) &&
+				u1.getPassword().equals(user.getPassword())) {
+			return true;
+			}
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
 
 }

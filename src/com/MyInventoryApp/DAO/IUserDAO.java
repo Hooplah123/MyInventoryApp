@@ -10,6 +10,6 @@ public interface IUserDAO {
 
 	public void delete(User user) throws Exception;
 
-	public User fetchUser(User user);
+	public User fetchUser(User user) throws Exception;
 
 }
